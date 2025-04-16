@@ -1,0 +1,17 @@
+{
+    "name": "login-signup-app",
+    "version": "1.0.0",
+    "description": "A simple login/signup system using Node.js, MySQL, and a frontend UI",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "mysql2": "^3.14.0"
+    },
+    "keywords": []
+}

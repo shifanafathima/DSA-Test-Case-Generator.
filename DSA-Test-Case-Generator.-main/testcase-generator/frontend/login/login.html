@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Signup UI</title>
+  <link rel="stylesheet" href="login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+<section class="user">
+  
+  <div class="user_options-container">
+    <div class="site-title">
+      <h1>Customizable Test Case Generator</h1>
+    </div>
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Don't have an account?</h2>
+        <p class="user_unregistered-text">Sign up and get started today!</p>
+        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+      </div>
+
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">Have an account?</h2>
+        <p class="user_registered-text">Log in to access your account and start using the features.</p>
+        <button class="user_registered-login" id="login-button">Login</button>
+      </div>
+    </div>
+
+    <div class="user_options-forms" id="user_options-forms">
+      <!-- Login form -->
+      <div class="user_forms-login">
+        <h2 class="forms_title">Login</h2>
+        <form id="login-form" class="forms_form">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="email" name="email" placeholder="Email" class="forms_field-input" required autofocus />
+            </div>
+            <div class="password-wrapper">
+              <input type="password" name="password" placeholder="Password" class="forms_field-input password-input" required />
+              <i class="fa-solid fa-eye toggle-password"></i>
+            </div>                      
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Log In" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+
+      <!-- Signup form -->
+      <div class="user_forms-signup">
+        <h2 class="forms_title">Sign Up</h2>
+        <form id="signup-form" class="forms_form">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="email" name="email" placeholder="Email" class="forms_field-input" required />
+            </div>
+            <div class="password-wrapper">
+              <input type="password" name="password" placeholder="Password" class="forms_field-input password-input" required />
+              <i class="fa-solid fa-eye toggle-password"></i>
+            </div>                      
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Sign up" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="login.js"></script>
+
+</body>
+</html>

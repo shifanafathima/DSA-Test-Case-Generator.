@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html, body {
+  height: 100vh;
+  overflow: hidden; /* Prevents scrollbar */
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Full height */
+  overflow: hidden;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px 30px;
+  overflow-y: auto; /* Allow internal scroll if needed */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+nav {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #000;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: -45px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff69b4;
+}
+
+nav .fas {
+  width: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Main Section */
+.main {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+/* Hero Title */
+.main-hero {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.main-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-hero p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* White background wrapper */
+.dashboard-wrapper {
+  background: #fff;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1100px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Grid */
+.main-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card Styles */
+.main-skills .card {
+  background: linear-gradient(135deg, #f857a6, #ff5858);
+  color: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.main-skills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.main-skills .card i {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.main-skills .card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: white;
+}

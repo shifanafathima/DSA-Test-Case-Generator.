@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Array Test Case Generator</title>
+  <link rel="stylesheet" href="../dashboard/dashboard.css" />
+  <link rel="stylesheet" href="array.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo"><span class="nav-item">Dashboard</span></a></li>
+        <li><a href="#"><i class="fas fa-home"></i><span class="nav-item">Go to Home</span></a></li>
+        <li><a href="#"><i class="fas fa-user"></i><span class="nav-item">Profile</span></a></li>
+        <li><a href="/array"><i class="fas fa-th"></i><span class="nav-item">Array</span></a></li>
+        <li><a href="/history"><i class="fas fa-history"></i><span class="nav-item">History</span></a></li>
+        <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i><span class="nav-item">Log out</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-hero">
+        <h1>Generate Array Test Cases</h1>
+      </div>
+
+      <div class="content-wrapper">
+        <!-- Left: Controls -->
+        <div class="left-panel">
+          <button onclick="generateTestCases()">Generate</button>
+          <button onclick="copyToClipboard()">Copy</button>
+          <textarea id="output" readonly placeholder="Generated output will appear here..."></textarea>
+        </div>
+
+        <!-- Right: Inputs -->
+        <div class="right-panel">
+          <label>Number of Test Cases:
+            <input type="number" id="testcases" value="3" />
+          </label>
+          <label>Array Size (optional):
+            <input type="number" id="arraysize" placeholder="Leave empty for random" />
+          </label>
+          <label>Min Value (optional):
+            <input type="number" id="minvalue" placeholder="-10000" />
+          </label>
+          <label>Max Value (optional):
+            <input type="number" id="maxvalue" placeholder="10000" />
+          </label>
+          <label>Value Type:
+            <select id="valuetype">
+              <option value="integer">Integer</option>
+              <option value="float">Float</option>
+              <option value="double">Double</option>
+            </select>
+          </label>
+
+          <h3>Edge Cases:</h3>
+          <div class="card-container" id="edge-cards">
+            <div class="card edge" data-value="random">Random</div>
+            <div class="card edge" data-value="asc">Ascending</div>
+            <div class="card edge" data-value="desc">Descending</div>
+            <div class="card edge" data-value="constant">Constant</div>
+            <div class="card edge" data-value="1and-1">1 & -1</div>
+            <div class="card edge" data-value="large">Large Pos/Neg</div>
+            <div class="card edge" data-value="empty">Empty</div>
+            <div class="card edge" data-value="duplicates">Duplicates</div>
+            <div class="card edge" data-value="reverse">Reverse</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="array.js"></script>
+</body>
+</html>

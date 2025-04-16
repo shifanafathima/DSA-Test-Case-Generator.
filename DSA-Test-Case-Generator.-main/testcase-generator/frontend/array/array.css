@@ -1,0 +1,168 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 20px 30px;
+    overflow-y: auto;
+    background: #fff;
+  }
+  
+  .main-hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: calc(100vh - 100px);
+  }
+  
+  .left-panel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .left-panel textarea {
+    height: 400px;
+    resize: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  
+  .left-panel button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #f857a6, #ff5858);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: none;
+  }
+  
+  .left-panel button:hover {
+    opacity: 0.9;
+  }
+  
+  .right-panel {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right-panel label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .right-panel input,
+  .right-panel select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .card {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: white;
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    user-select: none;
+  }
+  
+  .card.selected {
+    background: linear-gradient(135deg, #f857a6, #ff5858);
+    color: white;
+  }
+  
+  /* Sidebar styling */
+  nav {
+    position: relative;
+    height: 100vh;
+    width: 280px;
+    background: #000;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: -45px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    transition: background 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ff69b4;
+  }
+  
+  nav .fas {
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-left: 10px;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
